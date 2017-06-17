@@ -7,6 +7,7 @@ var gamePlay{
 	
 }
 
+//computer picks random number
 var generateRandomGemValue = function(){
 	for(var.....){
 		//pick numbers 19-120

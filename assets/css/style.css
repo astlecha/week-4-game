@@ -1,0 +1,43 @@
+h1{
+	background-color: #CD5C5C;
+	color: white;
+	width: 35%;
+	text-align: center;
+	margin-left: 5px;
+}
+
+#instructions {
+	background-color: #FFF9CF;
+	padding: 20px;
+	width: 50%;
+	margin-left: 5px;
+}
+
+#random-number {
+	background-color: #FA8072;
+	width: 30%;
+	color: white;
+	text-align: center;
+	float: left;
+	margin: 5px;
+}
+
+#tally {
+	background-color: #E9967A;
+	width:20%;
+	color: white;
+	text-align: center;
+	float: left;
+	margin: 5px;
+}
+
+#score-box {
+	background-color: #F08080;
+	width: 30%;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	position: relative;
+	top: 60px;
+	margin: 5px;
+}
