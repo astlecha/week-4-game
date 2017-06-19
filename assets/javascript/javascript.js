@@ -1,46 +1,71 @@
 var score = 0;
 var wins = 0;
-var crystals = ["ruby", "diamond", "citrine", "emerald"];
-var crystalObject = {}
+var losses = 0;
+var targetNumber = (Math.floor(Math.random()*120)+19);
+var increment = [];
 
-var gamePlay{
-	
-}
 
-//computer picks random number
-var genRandCrysVal = function(){
-	for(var.....){
-		//pick numbers 19-120
-		crystalObject(crystals[i])=Math.floor(Math.random())
-	}
-}
+//call on all functions in the document
+$(document).ready(function(){
 
-//create crystals with different random numbers
-function ruby(){
-	Math.floor((Math.random() * 10) + 1);
-	score+(numberrrrr)
-}
-function diamond(){
-	Math.floor((Math.random() * 10) + 1);
-}
-function citrine(){
-	Math.floor((Math.random() * 10) + 1);
-}
-function emerald(){
-	Math.floor((Math.random() * 10) + 1);
-}
+//call on targetNumber
+  $("#random-number").text(targetNumber);
 
-//score adds the value of each crystal together. make add function?
-
-//reset losses, generate points, call another random goal
+//pick random number for target and reset score to 0
 function resetGame(){
-	//if they win increase wins
-	if(score =genRandCrysVal){
+  targetNumber=Math.floor(Math.random()*120+19);
+      console.log(targetNumber);
 
-	}
-	//else if they lose, increase losses
-	if(score>random)
+  $('#random-number').text(targetNumber);
+      number1= Math.floor((Math.random()*11)+1);
+      number2= Math.floor((Math.random()*11)+1);
+      number3= Math.floor((Math.random()*11)+1);
+      number4= Math.floor((Math.random()*11)+1);
+      score= 0;
+      $('#current-score').text(score);
+};
 
-	genRandCrysVal();
 
-}
+//increment score by individual random numbers on click.
+$("#ruby-image").on("click", function() {
+  score += number1;
+  alert("Your new score is: " + score);
+  console.log("Score: " + score)
+});
+
+
+$("#diamond-image").on("click", function() {
+  score += number2;
+  alert("Your new score is: " + score);
+  console.log("Score: " + score)
+});
+
+
+  $("#citrine-image").on("click", function() {
+  score += number3;
+  alert("Your new score is: " + score);
+  console.log("Score: " + score)
+});
+
+
+  $("#emerald-image").on("click", function() {
+  score += number4;
+  alert("Your new score is: " + score);
+  console.log("Score: " + score)
+});
+
+
+    // //If counter exactly equals targetNumber, user wins, wins increment up 1.
+    // if (counter === targetNumber) {
+    //   alert("You win!");
+    //   wins++;
+    // }
+
+    // //If counter exceeds targetNumber, user loses, losses increment up 1.
+    // else if (counter >= targetNumber) {
+    //   alert("You lose!!");
+    //   losses++;
+    // }
+
+
+})
