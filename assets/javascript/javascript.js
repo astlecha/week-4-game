@@ -26,46 +26,72 @@ function resetGame(){
 };
 
 
+//call on when user wins
+function winner(){
+    wins++;
+    $("#userWins").text(wins);
+    reset();
+}
+
+//call on this function when user loses
+function loser(){
+    losses++;
+    $("#userLoses").text(loses);
+    reset();
+}
+
+
 //increment score by individual random numbers on click.
 $("#ruby-image").on("click", function() {
   score += number1;
   alert("Your new score is: " + score);
-  console.log("Score: " + score)
+//call on winner or loser function  
+  if (score === targetNumber) {
+    winner();
+  }
+  else if (score > targetNumber) {
+    loser();
+  }
 });
 
 
 $("#diamond-image").on("click", function() {
   score += number2;
   alert("Your new score is: " + score);
-  console.log("Score: " + score)
+//call on winner or loser function
+  if (score === targetNumber) {
+    winner();
+  }
+  else if (score > targetNumber) {
+    loser();
+  }  
 });
 
 
-  $("#citrine-image").on("click", function() {
+$("#citrine-image").on("click", function() {
   score += number3;
   alert("Your new score is: " + score);
-  console.log("Score: " + score)
+//call on winner or loser function
+  if (score === targetNumber) {
+    winner();
+  }
+  else if (score > targetNumber) {
+    loser();
+  } 
 });
 
 
-  $("#emerald-image").on("click", function() {
+$("#emerald-image").on("click", function() {
   score += number4;
   alert("Your new score is: " + score);
-  console.log("Score: " + score)
+//call on winner or loser function
+  if (score === targetNumber) {
+    winner();
+  }
+  else if (score > targetNumber) {
+    loser();
+  }  
 });
-
-
-    // //If counter exactly equals targetNumber, user wins, wins increment up 1.
-    // if (counter === targetNumber) {
-    //   alert("You win!");
-    //   wins++;
-    // }
-
-    // //If counter exceeds targetNumber, user loses, losses increment up 1.
-    // else if (counter >= targetNumber) {
-    //   alert("You lose!!");
-    //   losses++;
-    // }
 
 
 })
