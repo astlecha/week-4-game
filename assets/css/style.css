@@ -1,62 +1,84 @@
+body {
+	background-color: #D0EDEF;
+}
+
 h1{
-	background-color: #CD5C5C;
+	background-color: #8999E2;
 	color: white;
 	text-align: center;
 	padding: 10px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 50px;
 }
 
 #instructions {
-	background-color: #FFF9CF;
+	background-color: #A5D4F9;
 	padding: 20px;
 	width: 50%;
 	margin-left: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	float: left;
+	font-family: 'Lora', serif;
 }
 
 h2 {
-	background-color: #FA8072;
-	width: 30%;
+	background-color: #E4D4EF;
+	width: 40%;
 	color: white;
+	font-size: 40px;
 	text-align: center;
 	margin-left: 10px;
 	padding: 20px;
 	clear: left;
+	font-family: 'Lora', serif;
 }
 
 .crystal-border {
 	margin-left: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	width: 50px;
-	height: 50px;
+	width: 70px;
+	height: 70px;
 	float: left;
 }
 
 .crystal-image {
-	width: 50px;
-	height: 50px;
+	width: 70px;
+	height: 70px;
+}
+
+p {
+	color: white;
+	font-size: 20px;
 }
 
 #tally {
-	background-color: #E9967A;
+	background-color: #A5D4F9;
 	width:20%;
-	color: white;
 	text-align: center;
 	margin-left: 10px;
 	margin-top: 10px;
 	clear: left;
 	padding: 20px;
+	font-family: 'Lora', serif;
 }
 
 #score-box {
-	background-color: #F08080;
+	background-color: #AFA4D8;
 	width: 30%;
-	color: white;
+	height: 70px;
 	text-align: center;
 	margin-left: 10px;
-	margin-top: 10px;
 	clear: left;
+	float: right;
+	margin-bottom: 100px;
+	margin-right: 40px;
 	padding: 20px;
+	font-family: 'Lora', serif;
+}
+
+#current-score {
+	color: white;
+	font-size: 50px;
 }
